@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="10dp">
+
+    <!-- Main Layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/storeLogo"
+            android:layout_width="90dp"
+            android:layout_height="0dp"
+            android:padding="4dp"
+            android:background="@color/shimmer_placeholder"
+            android:foregroundGravity="center"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/storeTitle"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@color/shimmer_placeholder"
+            app:layout_constraintStart_toEndOf="@+id/storeLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Store Name" />
+
+        <TextView
+            android:id="@+id/storeOfferDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:padding="0dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:background="@color/shimmer_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/storeTitle"
+            app:layout_constraintTop_toBottomOf="@+id/storeTitle"
+            android:drawablePadding="5dp"
+            tools:text="Store Offer Description" />
+
+        <TextView
+            android:id="@+id/storeOffer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:padding="0dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:background="@color/shimmer_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/storeOfferDescription"
+            app:layout_constraintTop_toBottomOf="@+id/storeOfferDescription"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/red"
+            android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+            tools:text="Store Offer" />
+
+        <TextView
+            android:id="@+id/storeOfferExpiration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:padding="0dp"
+            android:textColor="@color/grey"
+            android:textSize="13dp"
+            android:background="@color/shimmer_placeholder"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/storeOffer"
+            app:layout_constraintTop_toBottomOf="@+id/storeOffer"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/grey"
+            android:drawableLeft="@drawable/ic_baseline_access_time_24"
+            tools:text="Offer Expiration" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
