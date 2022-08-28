@@ -11,3 +11,4 @@ DealsApp is a **native android based mobile application** which uses google fire
 ### Built with
 - [Android - Java](https://www.javatpoint.com/android-tutorial)
 - [Google Firebase](https://firebase.google.com/)
+- [Google Maps](https://developers.google.com/maps/documentation)
